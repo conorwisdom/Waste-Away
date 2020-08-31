@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".User.DonateProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay1_donate"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/grad_background">
+
+        <ImageView
+            android:id="@+id/iv_donate_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_back"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/donate_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="70dp"
+            android:paddingTop="10dp"
+            android:text="Donate Product"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_donate_product"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/rellay1_donate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_select_product_image" />
+
+    <EditText
+        android:id="@+id/donate_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_donate_product"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/et_background"
+        android:backgroundTint="@color/lightGrey"
+        android:fontFamily="sans-serif-light"
+        android:hint="Product Name"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/donate_product_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/donate_product_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/et_background"
+        android:backgroundTint="@color/lightGrey"
+        android:fontFamily="sans-serif-light"
+        android:hint="Product Category"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/donate_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/donate_product_category"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/et_background"
+        android:backgroundTint="@color/lightGrey"
+        android:fontFamily="sans-serif-light"
+        android:hint="Product Description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_donate_product"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/donate_product_description"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/gradStart"
+        android:fontFamily="sans-serif-light"
+        android:text="Donate Product"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/donate_product_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_donate_product"
+        android:layout_margin="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Thank you for your donation. Please send your donated item to the following address:\n\n
+                      7 Margaretta Court\n
+                                Belfast\n
+                              BT17 0EF\n
+                         Northern Ireland"
+        android:textColor="@color/darkSlateGrey"
+        android:textSize="16sp" />
+
+</RelativeLayout>

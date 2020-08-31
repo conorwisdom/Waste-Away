@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.RecyclingActivity">
+
+    <RelativeLayout
+        android:id="@+id/rellay1_recycling"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/grad_background">
+
+        <ImageView
+            android:id="@+id/iv_recycling_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_back"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="70dp"
+            android:paddingTop="10dp"
+            android:text="Recycling"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_recycling_postcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rellay1_recycling"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Postcode"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_recycling_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rellay1_recycling"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="150dp"
+        android:background="@drawable/et_background"
+        android:backgroundTint="@color/lightGrey"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_recycling_search"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_below="@id/rellay1_recycling"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/gradStart"
+        android:fontFamily="sans-serif-light"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linlay1_recycling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/recycling_title_pickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_recycling_postcode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="The next bin collection dates for BT17 0EF:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycling_green_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_title_pickup"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="2nd September 2020 (Recycling Bin)"
+        android:textAlignment="textStart"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/recycling_black_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_green_pickup"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="9th September 2020 (Landfill + Compost Bins)"
+        android:textAlignment="textStart"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/recycling_title_postcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_black_pickup"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Nearest recycling centre to BT17 0EF:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linlay2_recycling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_title_postcode"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/recycling_centre_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_building" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="The Cutts Recycling Centre"
+                    android:textAlignment="textStart"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="City Business Park"
+                android:textAlignment="textStart"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Belfast, BT17 9HN"
+                android:textAlignment="textStart"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="10:00am - 4:50pm"
+                android:textAlignment="textStart"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlay3_recycling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/recycling_title_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linlay2_recycling"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Which bin do common household items belong in?"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycling_black_bin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_title_items"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="Black(Landfill)"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycling_green_bin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_title_items"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="Green(Recycle)"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recycling_brown_bin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_title_items"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="Brown(Compost)"
+        android:textAlignment="textStart"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_black_bin"
+        android:layout_marginLeft="20dp"
+        android:text="Bottle/Jar Lids\nBubble Wrap\nCellophane\nCrisp Bags\nCoffee Cup\nLight Bulbs\nNappies\nPlant Boxes\nPlastic Bags\nPlastic Cutlery\nStyrofoam"
+        android:textAlignment="textStart"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_green_bin"
+        android:layout_marginLeft="150dp"
+        android:text="Aerosol Cans\nAluminium Foil\nCardboard Boxes\nEgg Cartons\nFood/Drink Cans\nMagazines\nPaper\nPlastic Bottles\nPlastic Pots/Tubs\nSoft Back Books\nToilet Roll Tubes"
+        android:textAlignment="textStart"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycling_brown_bin"
+        android:layout_marginLeft="287dp"
+        android:text="Bones\nCold Ashes\nEgg Shells\nFood Waste\nFruit + Veg\nGrass Cuttings\nHedge Trims\nPizza Boxes\nPlants + Flowers\nTeabags\nWeeds"
+        android:textAlignment="textStart"
+        android:textSize="16dp" />
+
+</RelativeLayout>

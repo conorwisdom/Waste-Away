@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="15dp"
+    android:elevation="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_product_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_product_layout_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_product_layout_location"
+            android:text="Product State"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/user_product_layout_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/user_product_layout_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Category"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/user_product_layout_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Description"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/user_product_layout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_layout_description"
+            android:text="Product Location"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

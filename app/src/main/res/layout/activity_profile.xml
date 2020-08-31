@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rellay1_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/grad_background">
+
+        <ImageView
+            android:id="@+id/iv_profile_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_back"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="70dp"
+            android:paddingTop="10dp"
+            android:text="User Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_profile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/rellay1_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_profile"
+        android:layout_margin="20dp"
+        android:text="Full Name"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_profile_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_profile_name"
+        android:layout_margin="20dp"
+        android:text="Username"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_profile_username"
+        android:layout_margin="20dp"
+        android:text="Email Address"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_profile_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_profile_email"
+        android:layout_margin="20dp"
+        android:text="Home Address"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_profile_address"
+        android:layout_margin="20dp"
+        android:text="Contact Number"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_send_message_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_profile_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/gradStart"
+        android:fontFamily="sans-serif-light"
+        android:text="Send Message Request"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_decline_message_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_send_message_request"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/gradStart"
+        android:fontFamily="sans-serif-light"
+        android:text="Decline Message Request"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+</RelativeLayout>

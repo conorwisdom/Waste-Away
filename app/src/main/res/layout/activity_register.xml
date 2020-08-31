@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/grad_background"
+    tools:context=".User.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/reg_app_logo"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_sustainability" />
+
+    <TextView
+        android:id="@+id/tv_reg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Waste Away"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_reg_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reg_title"
+        android:layout_centerHorizontal="true"
+        android:text="Account Registration"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/et_reg_name"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reg_subtitle"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Full Name*"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_reg_username"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reg_subtitle"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/et_reg_name"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:hint="Username*"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:hint="Email Address*"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_reg_address"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:hint="Home Address"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_reg_postcode"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:hint="Postcode"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />`
+
+    <EditText
+        android:id="@+id/et_reg_city"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_reg_password"
+        android:layout_below="@id/et_reg_address"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:hint="City"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_reg_password"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_postcode"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:hint="Password*"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />`
+
+    <EditText
+        android:id="@+id/et_reg_confirmpass"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/et_reg_password"
+        android:layout_below="@id/et_reg_postcode"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/et_background"
+        android:fontFamily="sans-serif-light"
+        android:hint="Confirm Password*"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkSlateGrey"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_mandatory_fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_reg_confirmpass"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="*Required fields" />
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/cbox_age"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mandatory_fields"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"
+        android:text="I am 18 years or older"
+        android:textColor="@color/darkSlateGrey"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cbd_strokeColor="@color/darkSlateGrey" />
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbox_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_account_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Already have an account?" />
+
+    <TextView
+        android:id="@+id/tv_reg_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_account_already"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+</RelativeLayout>

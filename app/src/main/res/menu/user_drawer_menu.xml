@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_message"
+            android:title="Message" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/btn_search"
+            android:title="Search" />
+    </group>
+
+    <item android:title="General">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_exchange"
+                    android:icon="@drawable/ic_exchange"
+                    android:title="Exchange" />
+                <item
+                    android:id="@+id/nav_rent"
+                    android:icon="@drawable/ic_rent"
+                    android:title="Rent" />
+                <item
+                    android:id="@+id/nav_donate"
+                    android:icon="@drawable/ic_donate"
+                    android:title="Donate" />
+                <item
+                    android:id="@+id/nav_manage"
+                    android:icon="@drawable/ic_manage"
+                    android:title="Manage Products" />
+                <item
+                    android:id="@+id/nav_recycling"
+                    android:icon="@drawable/ic_recycle"
+                    android:title="Recycling" />
+                <item
+                    android:id="@+id/nav_add_product"
+                    android:icon="@drawable/ic_add_product"
+                    android:title="Add Product" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Tools">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Settings" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

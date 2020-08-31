@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    tools:context=".User.RentalDetailsActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rellay1_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/grad_background">
+
+        <ImageView
+            android:id="@+id/iv_exchange_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="70dp"
+            android:paddingTop="10dp"
+            android:text="Exchange Details"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_exchange_image"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/rellay1_exchange"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_exchange_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_exchange_image"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Product Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_exchange_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_exchange_name"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Product Location"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_exchange_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_exchange_location"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Product Description"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_exchange_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_exchange_description"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_exchange_user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_exchange_username"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="User Phone"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_exchange_user_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_exchange_user_phone"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="User Comments"
+        android:textSize="16sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/gradStart"
+        android:elevation="6dp"
+        android:src="@drawable/ic_fab_msg"
+        app:fabSize="normal" />
+
+</RelativeLayout>

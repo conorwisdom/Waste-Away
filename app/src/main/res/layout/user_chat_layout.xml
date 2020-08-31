@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/message_user_image"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_msg_recipient" />
+
+    <TextView
+        android:id="@+id/tv_msg_recipient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/message_user_image"
+        android:background="@drawable/message_recipient_background"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Recipient Msg"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_msg_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@id/message_user_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/message_sender_background"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Sender Msg"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/message_sender_image"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_msg_recipient" />
+
+</RelativeLayout>
+

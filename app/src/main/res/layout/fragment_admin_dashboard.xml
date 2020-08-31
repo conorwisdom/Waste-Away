@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_dashboard_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_background"
+    tools:context=".User.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_admindash"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:elevation="6dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/gradStart"
+            android:src="@drawable/ic_fab_add"/>
+
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Welcome Conor"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linlay1_admindash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_admindash_orders"
+                android:layout_width="175dp"
+                android:layout_height="125dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_background"
+                android:drawableLeft="@drawable/btn_orders"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="5dp"
+                android:text="Orders"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_admindash_inventory"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/btn_background"
+                android:drawableLeft="@drawable/btn_inventory"
+                android:fontFamily="sans-serif-light"
+                android:text="Inventory"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linlay2_admindash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linlay1_admindash"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_admindash_customers"
+                android:layout_width="175dp"
+                android:layout_height="125dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_background"
+                android:drawableLeft="@drawable/btn_customers"
+                android:fontFamily="sans-serif-light"
+                android:text="Customers"
+                android:paddingLeft="5dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_admindash_manage"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_background"
+                android:drawableLeft="@drawable/ic_manage"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="5dp"
+                android:text="Manage Rentals"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linlay2_admindash">
+
+            <ImageView
+                android:id="@+id/iv_admindash_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_background"
+                android:padding="10dp"
+                android:src="@drawable/btn_message" />
+
+            <Button
+                android:id="@+id/btn_admindash_approve"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_background"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Approve Products"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_admindash_logout"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_background"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="75dp"
+                android:paddingRight="75dp"
+                android:text="Log Out"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
